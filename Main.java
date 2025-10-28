@@ -1,5 +1,3 @@
-
-// Import semua subclass komponen yang akan digunakan
 import com.pcbuilder.*;
 import com.pcbuilder.core.*;
 import com.pcbuilder.peripherals.*;
@@ -12,7 +10,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("--- UJI COBA APLIKASI KONFIGURATOR PC (VORTEX PC SOLUTIONS) ---");
 
-        // 1. Buat Instance Komponen
         System.out.println("\n[1] Mempersiapkan Komponen Awal...");
         
         // Core Components
@@ -32,6 +29,7 @@ public class Main {
         PC pcRakit = new PC(mb_a, cpu_a, ram_a);
         pcRakit.addStorage(ssd_a);
         pcRakit.addPeripheral(kb_a);
+        pcRakit.addPeripheral(mo_a);
 
         System.out.println("\n[2] PC Awal Terpasang.");
         System.out.println("MB: " + mb_a.getName() + " | CPU: " + cpu_a.getName());
