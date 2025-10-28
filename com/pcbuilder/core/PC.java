@@ -5,7 +5,6 @@ import java.util.Optional;
 
 import com.pcbuilder.Component;
 
-
 public class PC {
     private Component motherboard;
     private Component cpu;
