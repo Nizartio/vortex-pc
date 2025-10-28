@@ -1,5 +1,4 @@
-package src.com.vortexpc.model.components;
-
+package com.pcbuilder;
 
 public abstract class Component {
     protected String name;

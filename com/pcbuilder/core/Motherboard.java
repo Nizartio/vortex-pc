@@ -1,12 +1,8 @@
-package src.com.vortexpc.model.components.core;
-
-import src.com.vortexpc.model.components.Component;
+package com.pcbuilder.core;
+import com.pcbuilder.Component;
 
 public class Motherboard extends Component {
     private String bios;
-    public String getBios() {
-        return this.bios;
-    }
     public Motherboard() {
         super("noName",0);
     }
@@ -20,7 +16,7 @@ public class Motherboard extends Component {
     public void setBios(String bios) {
         this.bios = bios;
     }
-    public void runBios(){
-        System.out.println("Bios berjalan");
+    public String getBios() {
+        return this.bios;
     }
 }

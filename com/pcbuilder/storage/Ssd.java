@@ -1,4 +1,5 @@
-import src.com.vortexpc.model.components.Component;
+package com.pcbuilder.storage;
+import com.pcbuilder.Component;
 
 public class Ssd extends Component{
     protected String tipe;

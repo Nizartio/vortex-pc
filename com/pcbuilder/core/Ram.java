@@ -1,5 +1,5 @@
-package src.com.vortexpc.model.components.core;
-import src.com.vortexpc.model.components.Component;
+package com.pcbuilder.core;
+import com.pcbuilder.Component;
 
 public class Ram extends Component{
     private String tipe;

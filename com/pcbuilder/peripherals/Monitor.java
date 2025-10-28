@@ -1,5 +1,5 @@
-package src.com.vortexpc.model.components.peripheral;
-import src.com.vortexpc.model.components.Component;
+package com.pcbuilder.peripherals;
+import com.pcbuilder.Component;
 
 public class Monitor extends Component{
     private int ukuran;
@@ -15,13 +15,6 @@ public class Monitor extends Component{
         super(name, price);
         this.ukuran = ukuran;
         this.resolusi = resolusi;
-    }
-    public boolean runMonitor(){
-        if (this.ukuran > 0) {
-            return true;
-        } else {
-            return false;
-        }
     }
     public int getUkuran() {
         return this.ukuran;
