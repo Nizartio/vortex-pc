@@ -88,4 +88,15 @@ public class PC {
         for (Component p : peripherals) total += p.getPrice();
         return total;
     }
+    public void generateReport() {
+        System.out.println("--- PC Build Report ---");
+        String cpuName = this.cpu != null ? this.cpu.getName() : "N/A";
+        String mbName = this.motherboard != null ? this.motherboard.getName() : "N/A";
+        String ramCount = this.ram != null ? this.ram.getName() : "N/A";
+        
+        System.out.println("CPU: " + cpuName);
+        System.out.println("Motherboard: " + mbName);
+        System.out.println("RAM Sticks: " + ramCount);
+        System.out.println("-----------------------");
+    }
 }

@@ -4,6 +4,7 @@ import com.pcbuilder.*;
 import com.pcbuilder.core.*;
 import com.pcbuilder.peripherals.*;
 import com.pcbuilder.storage.*;
+import com.pcbuilder.reporting.*;
 import java.util.Optional;
 
 public class Main {
@@ -57,5 +58,8 @@ public class Main {
         Optional<Component> newStorage = pcRakit.getComponent(ssd_b.getName());
         newStorage.ifPresent(c -> System.out.println("Storage Baru: " + c.getName()));
         System.out.printf("Total Harga Akhir: $%.2f%n", pcRakit.calculateTotalPrice());
+
+        PCReportGenerator reporter = new PCReportGenerator();
+        reporter.generateReport(pcRakit);
     }
 }
